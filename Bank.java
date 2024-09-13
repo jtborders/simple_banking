@@ -31,7 +31,14 @@ public class Bank {
     public void withdraw(String accountNumber, double amount) {
         BankAccount account = getAccount(accountNumber);
         if (account != null) {
-            account.withdraw(amount);
+            if (amount > account.getBalance()) {
+                System.out.println("Cannot withdraw more than you have");
+            }
+            else {
+                account.withdraw(amount);
+            }
+
+
         } else {
             System.out.println("Account not found.");
         }

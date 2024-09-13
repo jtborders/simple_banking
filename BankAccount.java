@@ -21,7 +21,8 @@ public class BankAccount {
 
     public void withdraw(double amount) {
         balance -= amount;
-        transactionHistory.add("Withdraw of: $" + amount + ". Total is now: $" + balance);
+        transactionHistory.add("Withdraw of: $" + amount + ". Total is now: $" + balance); 
+        
     }
 
     public double getBalance() {

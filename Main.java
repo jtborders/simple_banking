@@ -84,6 +84,7 @@ public class Main {
 
             else if (option == 7) {
                 System.out.println("Exiting...");
+                break;
                 
             }
 
